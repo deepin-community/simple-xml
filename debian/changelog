@@ -1,0 +1,50 @@
+simple-xml (2.7.1-3) unstable; urgency=medium
+
+  * Team upload.
+  * Fixed CVE-2017-1000190: XXE vulnerability (Closes: #888547)
+  * Enabled the unit tests
+  * Standards-Version updated to 4.4.0
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Fri, 20 Sep 2019 00:12:59 +0200
+
+simple-xml (2.7.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Removed the stax dependency in the pom (Closes: #906343)
+  * Removed the dependency on the JRE
+  * Updated the Maven pom
+  * Added the missing dependency on libxpp3-java
+  * Build with the DH sequencer instead of CDBS
+  * Standards-Version updated to 4.2.1
+  * Switch to debhelper level 11
+  * Switch to source format 3.0 (quilt)
+  * Improved the package description
+  * Changed the Section from libs to java
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Thu, 06 Sep 2018 13:24:34 +0200
+
+simple-xml (2.7.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release (Closes: #736855)
+  * Added build dependency for libxpp3-java
+  * Bumped Standards-Version
+
+ -- Hilko Bengen <bengen@debian.org>  Sun, 08 Jun 2014 15:23:18 +0200
+
+simple-xml (2.3.2-1) unstable; urgency=low
+
+  * Standards-Version updated to version 3.8.4
+  
+  [ Fabian Köster ]
+  * New upstream release
+  * Correct license information in debian/pom.xml
+  * Exclude generated Javadoc from orig-tarball
+
+ -- Sylvestre Ledru <sylvestre@debian.org>  Fri, 05 Mar 2010 19:44:34 +0100
+
+simple-xml (2.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #549566)
+
+ -- Fabian Köster <f.koester@tarent.de>  Tue, 26 Jan 2010 13:54:18 +0100

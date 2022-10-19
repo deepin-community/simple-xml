@@ -1,0 +1,18 @@
+The original upstream source package has been modified in the way
+that it does not include any binary files (e.g. *.jar), neither 
+dependencies of this library nor the library itself.
+
+The dependencies of this software will be provided by the corresponding
+Debian packages and the binary of this software will be created
+if you build this source package.
+
+Files or directories which were removed from the orignal source tarball:
+
+lib/
+jar/
+javadoc/
+test/lib/*.jar
+
+The tarball can be recreated with the command uscan (which is going to call
+the orig-tar.sh script)
+

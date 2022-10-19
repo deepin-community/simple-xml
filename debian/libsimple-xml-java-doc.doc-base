@@ -1,0 +1,9 @@
+Document: libsimple-xml-java-doc
+Title: Javadoc API for Simple
+Author: Niall Gallagher <niallg@users.sf.net>
+Abstract: The javadoc API of the Simple XML Serialization and Configuration Framework
+Section: Programming
+
+Format: HTML
+Index: /usr/share/doc/libsimple-xml-java/api/index.html
+Files: /usr/share/doc/libsimple-xml-java/api/*

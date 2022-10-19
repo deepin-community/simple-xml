@@ -1,0 +1,48 @@
+Source: simple-xml
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Fabian Köster <f.koester@tarent.de>
+Build-Depends:
+ ant,
+ ant-optional,
+ debhelper (>= 11),
+ default-jdk,
+ junit,
+ libxpp3-java,
+ maven-repo-helper
+Standards-Version: 4.4.0
+Vcs-Git: https://salsa.debian.org/java-team/simple-xml.git
+Vcs-Browser: https://salsa.debian.org/java-team/simple-xml
+Homepage: http://simple.sourceforge.net/
+
+Package: libsimple-xml-java
+Architecture: all
+Depends: ${misc:Depends}, libxpp3-java
+Suggests: libsimple-xml-java-doc
+Description: XML serialization and configuration framework for Java
+ Simple is a high performance XML serialization and configuration framework for
+ Java. Its goal is to provide an XML framework that enables rapid development
+ of XML configuration and communication systems.
+ This framework aids the development of XML systems with minimal effort and
+ reduced errors. It offers full object serialization and deserialization,
+ maintaining each reference encountered.
+ In essence it is similar to C# XML serialization for the Java platform, but
+ offers additional features for interception and manipulation.
+
+Package: libsimple-xml-java-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libsimple-xml-java
+Description: XML serialization and configuration framework for Java (documentation)
+ Simple is a high performance XML serialization and configuration framework for
+ Java. Its goal is to provide an XML framework that enables rapid development
+ of XML configuration and communication systems.
+ This framework aids the development of XML systems with minimal effort and
+ reduced errors. It offers full object serialization and deserialization,
+ maintaining each reference encountered.
+ In essence it is similar to C# XML serialization for the Java platform, but
+ offers additional features for interception and manipulation.
+ .
+ This package provides the Javadoc API for Simple.

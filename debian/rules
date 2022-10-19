@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+export CLASSPATH=/usr/share/java/xpp3.jar
+
+%:
+	dh $@ --with maven-repo-helper
+
+override_dh_auto_build:
+	dh_auto_build -- build javadoc
+
+override_dh_auto_test:
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
+	mkdir -p test/lib
+	cd test && ant test
+endif
